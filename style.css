@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    font-family: 'Inter', sans-serif;
+}
+.light{
+    background-color:  hsl(0, 0%, 100%);
+}
+.dark{
+    background-color:  hsl(230, 17%, 14%);
+}
+.main{
+    margin: 0 25px;
+}
+.background-box{
+    border-radius: 0 0 25px 25px;
+    height: 235px;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    top:0;
+}
+.light .background-box{
+    background-color:  hsl(225, 100%, 98%);
+}
+.dark .background-box{
+   background-color:hsl(232, 19%, 15%);
+}
+
+/*---------------*/
+header .headings{
+    padding: 40px 0 25px;
+}  
+.light header .headings{
+    border-bottom:1px solid hsl(230, 17%, 14%) ;
+}
+.dark header .headings{
+    border-bottom:1px solid   hsl(228, 34%, 66%) ;
+}
+
+/*-----------------*/
+header .headings h1{
+    font-size: 22px;
+    font-weight: 700;
+   
+}
+.light header .headings h1{
+    color:  hsl(230, 17%, 14%);
+}
+.dark header .headings h1{
+    color:  hsl(0, 0%, 100%);
+}
+
+/* ---------------------- */
+header .headings p{
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    
+}
+.light header .headings p{
+    color:  hsl(228, 12%, 44%);
+}
+.dark header .headings p{
+    color: hsl(228, 34%, 66%);
+}
+/* ----------------------------------- */
+.toggler{
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.toggler p{
+    font-weight: 700;
+    font-size: 14px;  
+    display: inline; 
+}
+.light .toggler p{
+    color:  hsl(228, 12%, 44%);
+}
+.dark .toggler p{
+    color:  hsl(228, 34%, 66%);
+}
+/* ----------------------------------- */
+.toggle-button{
+    height: 25px;
+    width: 50px;
+    display: inline-block;
+    border-radius: 15px;
+    padding: 2px;
+    position: relative;
+
+}    
+.dark .toggle-button{
+    background:linear-gradient(to right ,hsl(210, 78%, 56%) ,hsl(146, 68%, 55%));
+}
+
+.light .toggle-button{
+    background-color: hsl(230, 22%, 74%);    
+}
+
+.circle{
+    height:21px;
+    width: 23px;
+    border-radius: 25px;
+    transition: all 400ms ease-in-out;   
+}
+
+.dark .circle
+{
+    background-color:  hsl(232, 19%, 15%);
+}
+
+.light .circle{
+    background:  hsl(225, 100%, 98%);
+    margin-left:23px ;
+}
+
+/* ---------------------------------------------------- */
+
+.items{
+    height: 217px;
+    border-radius: 10px;
+    margin: 25px 0px;
+    text-align: center; 
+    cursor: pointer;
+}
+.dark .items{
+    background-color: hsl(228, 28%, 20%) ;
+}
+.light .items{
+    background-color:  hsl(227, 47%, 96%)
+}
+.facebook{
+    border-top: 4px solid hsl(208, 92%, 53%);
+}
+.twitter{
+    border-top: 4px solid hsl(203, 89%, 53%);
+}
+
+.dark .instagram{
+    border-top: double 4px transparent;
+    background-image: linear-gradient( hsl(228, 28%, 20%), hsl(228, 28%, 20%)), radial-gradient(circle at top left,hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    background-clip: content-box, border-box;
+}
+
+.light .instagram{
+    border-top: double 4px transparent;
+    background-image: linear-gradient( hsl(227, 47%, 96%), hsl(227, 47%, 96%)), radial-gradient(circle at top left,hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    background-clip: content-box, border-box;
+}
+
+.youtube{
+    border-top: 4px solid hsl(348, 97%, 39%);
+}
+
+/* -------------------------------------- */
+.items .username{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 27px 0px;
+}
+.items .username p{
+    display: inline-block;
+    font-size: 14px;
+    padding-left:10px;
+}
+.light .items .username p{
+    color:  hsl(228, 12%, 44%);
+}
+.dark .items .username p{
+    color: hsl(228, 34%, 66%);
+}
+
+/* ------------------------------------------------------ */
+
+.items .data h1{
+    font-size: 45px;
+}
+.dark .items .data h1{
+    color: hsl(0, 0%, 100%);
+}
+.light .items .data h1{
+    color: hsl(230, 17%, 14%);
+}
+
+/* ------------------------------------------------------- */
+
+.items .data p{
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.dark .items .data p{
+    color: hsl(228, 34%, 66%);
+}
+.light .items .data p{
+    color: hsl(228, 12%, 44%);
+}
+
+/* ------------------------------------------ */
+
+.items .count{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+.items .count p{
+    display: inline-block;
+    font-size: 12px;
+    padding-left: 5px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.up{
+   color: hsl(146, 68%, 55%) !important;
+}
+.down{
+    color:  hsl(356, 69%, 56%) !important;
+}
+
+/* ---------------------------------------------- */
+
+.overview h1{
+    font-size: 25px;
+    margin: 50px 0 25px;
+}
+.light .overview h1{
+    color: hsl(228, 34%, 66%);
+}
+.dark .overview h1{
+    color: hsl(0, 0%, 100%);
+}
+
+.overview .details{
+    height: 125px;
+    border-radius:10px;
+    padding: 25px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    margin: 25px 0;
+    cursor: pointer;
+}
+.dark .overview .details{
+    background-color: hsl(228, 28%, 20%);
+}
+.light .overview .details{
+    background-color:  hsl(227, 47%, 96%);    
+}
+
+.details .icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.details p{
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+}
+.dark .details p{
+   color:hsl(228, 34%, 66%);
+}
+.light .details p{
+    color:  hsl(230, 17%, 14%);
+}
+
+.details h1{
+    font-size: 30px;
+    display: inline;
+    margin: 0 !important;
+}
+.light .details h1{
+    color:  hsl(230, 17%, 14%)
+    ;
+}
+
+.dark .details h1{
+    color:  hsl(0, 0%, 100%) ;
+}
+
+
+@media only screen and (min-width: 700px){
+
+    .background-box{
+        height: 245px;   
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        margin: 0 85px;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+    .light header .headings{
+        border-bottom:none ;
+    }
+    .dark header .headings{
+        border-bottom:none;
+    }
+    header .headings h1{
+        font-size: 25px;
+    }
+
+    .toggler p{
+        font-size: 15px;   
+        margin-right: 15px;
+    }
+
+    .handles{
+        display: flex;
+        justify-content: space-between;  
+        flex-wrap: wrap;  
+    }
+    .items{
+        width: 255px;
+        height: 217px;
+        flex-shrink: 1;
+        margin-left:10px;
+        margin-right: 10px;
+    }
+    .overview{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .overview h1{
+        font-size: 30px;
+        width: 100%;
+    }
+
+    .overview .details{
+        height: 125px;
+        width: 255px;
+        margin-left:10px;
+        margin-right: 10px;
+    }
+}
